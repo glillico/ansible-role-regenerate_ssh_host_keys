@@ -1,0 +1,13 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+  provider:
+    name: virtualbox
+platforms:
+  - name: instance
+    box: geerlingguy/${MOLECULE_DISTRO:-rockylinux8}
+    pre_build_image: true
+provisioner:
+  name: ansible

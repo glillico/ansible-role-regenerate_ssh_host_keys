@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  roles:
+    - role: glillico.regenerate_ssh_host_keys
